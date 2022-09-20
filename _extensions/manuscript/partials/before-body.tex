@@ -1,0 +1,23 @@
+\begin{flushleft}
+
+\Large{
+  \textbf{$title$}
+}
+\newline
+\\
+
+$if(author-horizontal)$$by-author:_authors.tex()[, ]$$else$$by-author:_authors.tex()[\newline ]$$endif$
+\newline
+\newline
+$by-affiliation:_affiliations.tex()[\newline ]$
+\bigskip
+
+$for(by-author)$
+$if(by-author.attributes.corresponding)$
+$by-author:_corresponding.tex()$
+$endif$
+$endfor$
+
+\end{flushleft}
+
+\pagebreak

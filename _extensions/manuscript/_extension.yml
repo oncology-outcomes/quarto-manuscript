@@ -1,0 +1,38 @@
+title: Oncology Outcomes Manuscript
+author: Matt Warkentin
+version: 0.0.1
+contributes:
+  format:
+    common:
+      toc: false
+      number-sections: false
+      execute:
+        eval: true
+        echo: false
+        warning: false
+      fig-align: center
+      csl: vancouver-brackets-no-et-al.csl
+      lang: en
+    pdf:
+      documentclass: article
+      template-partials:
+        - 'partials/title.tex'
+        - 'partials/before-body.tex'
+        - 'partials/_authors.tex'
+        - 'partials/_affiliations.tex'
+        - 'partials/_corresponding.tex'
+      include-in-header: _preamble.tex
+      keep-tex: true
+      mainfont: Arial
+      monofont: Arial
+      fontsize: 12pt
+      colorlinks: true
+      linkcolor: blue
+      citecolor: blue
+      urlcolor: red
+      geometry:
+        - 'margin=2cm'
+      fig-cap-location: bottom
+      tbl-cap-location: top
+    docx:
+      reference-doc: template.docx
