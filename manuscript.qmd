@@ -1,0 +1,33 @@
+---
+title: "This is an example manuscript"
+format: 
+  manuscript-pdf: default
+author:
+  - name: Matthew T. Warkentin
+    email: warkentin@lunenfeld.ca
+    affiliations:
+      - name: Univeristy of Calgary
+        department: Cumming School of Medicine
+        address: 3330 Hospital Dr NW
+        city: Calgary
+        region: AB
+        country: Canada
+      - name: Lunenfeld-Tanenbaum Research Institute
+        department: Prosserman Centre for Population Health Research
+        address: 60 Murrary St
+        city: Toronto
+        region: ON
+        country: Canada
+  - name: Darren R. Brenner
+    attributes:
+        corresponding: true
+    email: darren.brenner@ucalgary.ca
+    affiliations:
+      - name: Univeristy of Calgary
+        department: Cumming School of Medicine
+        address: 3330 Hospital Dr NW
+        city: Calgary
+        region: AB
+        country: Canada
+author-horizontal: false
+---

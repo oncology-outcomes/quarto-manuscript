@@ -24,15 +24,11 @@ contributes:
       include-in-header: _preamble.tex
       keep-tex: true
       mainfont: Arial
-      monofont: Arial
-      fontsize: 12pt
       colorlinks: true
       linkcolor: blue
       citecolor: blue
-      urlcolor: red
+      urlcolor: blue
       geometry:
         - 'margin=2cm'
       fig-cap-location: bottom
       tbl-cap-location: top
-    docx:
-      reference-doc: template.docx

@@ -1,17 +1,20 @@
+\doublespacing
+
 \begin{flushleft}
+
+\pagenumbering{gobble} % no page numbers on title page
 
 \Large{
   \textbf{$title$}
 }
 \newline
-\\
-
+\newline
 $if(author-horizontal)$$by-author:_authors.tex()[, ]$$else$$by-author:_authors.tex()[\newline ]$$endif$
 \newline
 \newline
 $by-affiliation:_affiliations.tex()[\newline ]$
-\bigskip
-
+\newline
+\newline
 $for(by-author)$
 $if(by-author.attributes.corresponding)$
 $by-author:_corresponding.tex()$
@@ -21,3 +24,5 @@ $endfor$
 \end{flushleft}
 
 \pagebreak
+\pagenumbering{arabic}
+\linenumbers
