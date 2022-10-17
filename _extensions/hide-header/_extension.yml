@@ -1,6 +1,0 @@
-title: Hide Markdown Headers
-author: Matt Warkentin
-version: 0.0.1
-contributes:
-  filters:
-    - hide-header.lua
