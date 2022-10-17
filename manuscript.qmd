@@ -1,6 +1,7 @@
 ---
 title: "This is an example manuscript"
 format: 
+  manuscript-docx: default
   manuscript-pdf: default
 author:
   - name: Matthew T. Warkentin
@@ -18,10 +19,8 @@ author:
         city: Toronto
         region: ON
         country: Canada
-  - name: Darren R. Brenner
-    attributes:
-        corresponding: true
-    email: darren.brenner@ucalgary.ca
+  - name: Winson Cheung
+    email: wch@ucalgary.ca
     affiliations:
       - name: Univeristy of Calgary
         department: Cumming School of Medicine
@@ -29,5 +28,28 @@ author:
         city: Calgary
         region: AB
         country: Canada
-author-horizontal: false
+  - name: Darren R. Brenner
+    email: darren.brenner@ucalgary.ca
+    attributes:
+      corresponding: true
+      equal: true
+    affiliations:
+      - name: Univeristy of Calgary
+        department: Cumming School of Medicine
+        address: 3330 Hospital Dr NW
+        city: Calgary
+        region: AB
+        country: Canada
 ---
+
+# Abstract
+
+# Introduction
+
+# Methods
+
+# Results
+
+# Discussion
+
+# References {-}

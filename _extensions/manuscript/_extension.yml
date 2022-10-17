@@ -4,6 +4,8 @@ version: 0.0.1
 contributes:
   format:
     common:
+      filters:
+        - authors-affiliations.lua
       toc: false
       number-sections: false
       execute:
@@ -11,24 +13,25 @@ contributes:
         echo: false
         warning: false
       fig-align: center
-      csl: vancouver-brackets-no-et-al.csl
+      csl: config/vancouver-brackets-no-et-al.csl
       lang: en
+      link-citations: true
+      colorlinks: true
+      linkcolor: blue
+      citecolor: blue
+      urlcolor: blue
+      filecolor: blue
     pdf:
       documentclass: article
       template-partials:
         - 'partials/title.tex'
         - 'partials/before-body.tex'
-        - 'partials/_authors.tex'
-        - 'partials/_affiliations.tex'
-        - 'partials/_corresponding.tex'
-      include-in-header: _preamble.tex
+      include-in-header: config/_preamble.tex
       keep-tex: true
       mainfont: Arial
-      colorlinks: true
-      linkcolor: blue
-      citecolor: blue
-      urlcolor: blue
       geometry:
         - 'margin=2cm'
       fig-cap-location: bottom
       tbl-cap-location: top
+    docx:
+      reference-doc: config/custom-reference-doc.docx
