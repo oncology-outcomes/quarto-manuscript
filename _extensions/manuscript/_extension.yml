@@ -29,6 +29,7 @@ contributes:
       include-in-header: config/_preamble.tex
       keep-tex: true
       mainfont: Arial
+      fontsize: 12pt
       geometry:
         - 'margin=2cm'
       fig-cap-location: bottom
