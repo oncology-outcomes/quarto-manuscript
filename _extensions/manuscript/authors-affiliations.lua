@@ -38,6 +38,13 @@ local function create_author_list(byAuthor)
 
     local name = stringify(author.name.literal)
 
+    orcid = nil
+    if quarto.doc.is_format('pdf') and author.orcid then
+      orcid_str = '\\orcidlink{' .. stringify(author.orcid) .. '}'
+      orcid = pandoc.RawInline('latex', orcid_str)
+      quarto.log.output(orcid)
+    end
+
     if author.attributes ~= nil then
       if author.attributes.equal ~= nil and author.attributes.equal then
         sups_str = sups_str .. ',†'
@@ -52,7 +59,8 @@ local function create_author_list(byAuthor)
 
     local authorEntry = List:new({
       pandoc.Str(name),
-      pandoc.Superscript(pandoc.Str(sups_str))
+      pandoc.Superscript(pandoc.Str(sups_str)),
+      orcid
     })
 
     if authorHoriz and i < #byAuthor then
@@ -76,26 +84,6 @@ local function create_affiliation_list(byAffiliation)
     if aff.name then
       full_aff:insert(stringify(aff.name))
     end
-
-    if aff.address then
-      full_aff:insert(stringify(aff.address))
-    end
-
-    if aff.city then
-      full_aff:insert(stringify(aff.city))
-    end
-
-    if aff.region then
-      full_aff:insert(stringify(aff.region))
-    end
-
-    if aff.postal then
-      full_aff:insert(stringify(aff.postal))
-    end
-
-    if aff.country then
-      full_aff:insert(stringify(aff.country))
-    end    
     
     local entry = table.concat(full_aff, ', ')
     

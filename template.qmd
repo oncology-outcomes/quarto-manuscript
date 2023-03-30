@@ -1,37 +1,29 @@
 ---
 title: "This is an example manuscript"
 format: 
-  manuscript-docx: default
   manuscript-pdf: default
+  manuscript-docx: default
 author:
   - name: Matthew T. Warkentin
     email: warkentin@lunenfeld.ca
+    orcid: 0000-0001-8730-3511
     affiliations:
-      - name: Department of Oncology, Cumming School of Medicine, Univeristy of Calgary
-        address: 3330 Hospital Dr NW
-        city: Calgary
-        region: AB
-        country: Canada
-      - name: Lunenfeld-Tanenbaum Research Institute
-        department: Prosserman Centre for Population Health Research
-        address: 60 Murrary St
-        city: Toronto
-        region: ON
-        country: Canada
+      - Department of Oncology, Cumming School of Medicine, Univeristy of Calgary, Calgary, AB, Canada
+      - Prosserman Centre for Population Health Research, Lunenfeld-Tanenbaum Research Institute, Sinai Health System, Toronto, ON, Canada
+  - name: Winson Y. Cheung
+    affiliations:
+      - Department of Oncology, Cumming School of Medicine, Univeristy of Calgary, Calgary, AB, Canada
+    attributes:
+      equal: true
   - name: Darren R. Brenner
     email: darren.brenner@ucalgary.ca
+    affiliations:
+      - Department of Oncology, Cumming School of Medicine, Univeristy of Calgary, Calgary, AB, Canada
     attributes:
       corresponding: true
-      equal: true
-    affiliations:
-      - name: Department of Oncology, Cumming School of Medicine, Univeristy of Calgary
-        address: 3330 Hospital Dr NW
-        city: Calgary
-        region: AB
-        country: Canada
 ---
 
-# Abstract
+# Abstract {.pagebreak}
 
 # Introduction
 
