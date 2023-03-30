@@ -6,6 +6,7 @@ contributes:
     common:
       filters:
         - authors-affiliations.lua
+        - header-utils.lua
       toc: false
       number-sections: false
       execute:
@@ -21,18 +22,16 @@ contributes:
       citecolor: blue
       urlcolor: blue
       filecolor: blue
+      fig-cap-location: bottom
+      tbl-cap-location: top
     pdf:
       documentclass: article
       template-partials:
         - 'partials/title.tex'
         - 'partials/before-body.tex'
-      include-in-header: config/_preamble.tex
-      keep-tex: true
       mainfont: Arial
-      fontsize: 12pt
+      fontsize: 11pt
       geometry:
         - 'margin=2cm'
-      fig-cap-location: bottom
-      tbl-cap-location: top
     docx:
       reference-doc: config/custom-reference-doc.docx
