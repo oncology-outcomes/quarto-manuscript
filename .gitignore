@@ -2,11 +2,11 @@
 *.html
 *.log
 *.aux
-manuscript.tex
-manuscript.pdf
-manuscript.docx
-manuscript.html
-manuscript.native
-manuscript_files/
+template.tex
+template.pdf
+template.docx
+template.html
+template.native
+template_files/
 /.luarc.json
 .DS_Store
