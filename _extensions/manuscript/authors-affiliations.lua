@@ -42,7 +42,6 @@ local function create_author_list(byAuthor)
     if quarto.doc.is_format('pdf') and author.orcid then
       orcid_str = '\\orcidlink{' .. stringify(author.orcid) .. '}'
       orcid = pandoc.RawInline('latex', orcid_str)
-      quarto.log.output(orcid)
     end
 
     if author.attributes ~= nil then
